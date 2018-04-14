@@ -10,4 +10,26 @@ body {
       font-size: 40px;
       margin-top: 30px;
     }
-  }
+    .cardTable {
+      position: relative;
+      top: 10%;
+      left: 10%;
+      border: 2px solid black;
+      background: #E7DACB;
+      color: blue;
+      height: 80vh;
+      width: 80vw;
+      overflow: hidden;
+    }
+    .cardHolder {
+      height: 15vh;
+      width: 15vw;
+      position: relative;
+      margin: 2%;
+    }
+    .styleCard{
+      height: 10vh;
+      width: 10vw;
+    }
+}
+

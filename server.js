@@ -14,7 +14,7 @@ var bodyParser = require('body-parser');
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use('/public', express.static(__dirname + '/dist'));
+app.use('/dist', express.static(__dirname + '/dist'));
 
 var port = process.env.PORT || 8080;        // set our port
 

@@ -2,18 +2,20 @@ import React from "react"
 import ReactDOM from "react-dom"
 import Header from './components/header'
 import './scss/app.scss'
+import Login from './components/login'
+import Game from './components/game'
 
-class HelloMessage extends React.Component {
+
+class Squats extends React.Component {
     render() {
-        return <div>
+        return <React.Fragment>
             <Header/>
-            <div className="container">
-                <h1>Hello World {this.props.name}</h1>
-            </div>
-        </div>
+            {true ? <Game></Game> : <Login {...this.props}/>}
+                
+            </React.Fragment>
     }
 }
 
 let App = document.getElementById("app")
 
-ReactDOM.render(<HelloMessage name="Pronit" />, App)
+ReactDOM.render(<Squats name="Pronit" />, App)
